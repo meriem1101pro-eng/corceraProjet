@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <script src="gallery.js" defer></script>
+</head>
+<body onload="addTabFocus()">
+
+    <header>
+        <h1>Interactive Nature &amp; Architecture Gallery</h1>
+        <h2>Hover over or use the Tab key to preview each photograph</h2>
+    </header>
+
+    <main>
+        <div id="image" role="region" aria-live="polite">
+            Hover over or focus on an image below to display here.
+        </div>
+
+        <div class="gallery-grid">
+            <img class="preview" 
+                 src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" 
+                 alt="Yosemite Valley at sunset with granite cliffs reflecting in the Merced River" 
+                 onmouseover="upDate(this)" 
+                 onmouseleave="unDo()" 
+                 onfocus="upDate(this)" 
+                 onblur="unDo()">
+
+            <img class="preview" 
+                 src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80" 
+                 alt="Sunbeams shining through morning mist over a pine forest valley" 
+                 onmouseover="upDate(this)" 
+                 onmouseleave="unDo()" 
+                 onfocus="upDate(this)" 
+                 onblur="unDo()">
+
+            <img class="preview" 
+                 src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" 
+                 alt="Turquoise ocean waves gently washing onto a white sandy tropical beach" 
+                 onmouseover="upDate(this)" 
+                 onmouseleave="unDo()" 
+                 onfocus="upDate(this)" 
+                 onblur="unDo()">
+
+            <img class="preview" 
+                 src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80" 
+                 alt="Snow-covered mountain peaks under a clear starry night sky" 
+                 onmouseover="upDate(this)" 
+                 onmouseleave="unDo()" 
+                 onfocus="upDate(this)" 
+                 onblur="unDo()">
+
+            <img class="preview" 
+                 src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80" 
+                 alt="Rolling green hills shrouded in low fog at dawn" 
+                 onmouseover="upDate(this)" 
+                 onmouseleave="unDo()" 
+                 onfocus="upDate(this)" 
+                 onblur="unDo()">
+
+            <img class="preview" 
+                 src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=800&q=80" 
+                 alt="Modern city skyline illuminated at twilight along a waterfront" 
+                 onmouseover="upDate(this)" 
+                 onmouseleave="unDo()" 
+                 onfocus="upDate(this)" 
+                 onblur="unDo()">
+        </div>
+    </main>
+
+</body>
+</html>
